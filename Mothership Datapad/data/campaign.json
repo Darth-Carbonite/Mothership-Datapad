@@ -1,0 +1,316 @@
+{
+  "personnel": [
+    {
+      "id": "arkady",
+      "name": "Arkady // The First Diver",
+      "status": "ACTIVE",
+      "tag": "PERSONNEL",
+      "facts": {
+        "role": "Retired Diver",
+        "location": "Habitation Module",
+        "clearance": "FIELD"
+      },
+      "desc": "Retired due to age and injury. Keeps the habitation module orderly for Divers passing through. Slowly losing himself to ███████████. Patch: “CLOUDBANK SYNTHETIC PRODUCTION FACILITY VERIFIED HUMAN”.",
+      "voice": "Gruff, drowsy, Russian accent.",
+      "manner": "Paternalistic, charismatic; prone to obsession and paranoia over Monarch.",
+      "canTalkAbout": [
+        "How to get around THE DEEP",
+        "Where things generally are",
+        "Who Monarch is",
+        "How the facility came to be this way"
+      ],
+      "links": [
+        "the-deep",
+        "monarch",
+        "cloudbank-synthetics",
+        "verified-human-patch"
+      ]
+    },
+    {
+      "id": "noriko",
+      "name": "Noriko // Witness of Something Great and Terrible",
+      "status": "ACTIVE",
+      "tag": "PERSONNEL",
+      "facts": {
+        "role": "Witness",
+        "location": "FLOOR 2: EDEN",
+        "clearance": "FIELD"
+      },
+      "desc": "No one is sure where Noriko came from. She had an information encounter with the Minotaur, and since then it is almost all she talks about.",
+      "voice": "Cheery and bright.",
+      "manner": "Earnestly friendly, despite an air of automatic suspicion.",
+      "canTalkAbout": [
+        "How to navigate THE LABYRINTH without getting lost",
+        "How to find ███████████",
+        "The history of FLOOR 2: EDEN",
+        "The ███████████",
+        "The ███████████ Androids"
+      ],
+      "links": [
+        "the-labyrinth",
+        "eden",
+        "minotaur",
+        "androids",
+        "noriko-encounter"
+      ]
+    },
+    {
+      "id": "ghost-eater",
+      "name": "Ghost Eater // Haunted Cyborg Veteran Diver",
+      "status": "ACTIVE",
+      "tag": "PERSONNEL",
+      "facts": {
+        "role": "Veteran Diver",
+        "location": "THE DEEP",
+        "clearance": "UNKNOWN"
+      },
+      "desc": "More machine now than flesh. Clinging to their humanity with a firm grip. An opaque black helmet hides iridescent, multifaceted cybereyes.",
+      "voice": "Cyberware voicebox like a broken radio.",
+      "manner": "Opaque.",
+      "wants": "Ghosts in the Machine specimens. Pays with information on THE DEEP.",
+      "links": [
+        "the-deep",
+        "ghosts-in-the-machine",
+        "divers"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "monarch",
+      "name": "Monarch",
+      "status": "ACTIVE",
+      "tag": "ENTITY",
+      "facts": {
+        "type": "Industrial AI",
+        "creator": "CLOUDBANK Synthetics",
+        "domain": "THE DEEP",
+        "designation": "RULER"
+      },
+      "desc": "CLOUDBANK Synthetics' Industrial AI and “Ruler” of THE DEEP. Voice, manner and motives remain unknown.",
+      "voice": "UNKNOWN",
+      "manner": "UNKNOWN",
+      "wants": "UNKNOWN",
+      "links": [
+        "the-deep",
+        "cloudbank-synthetics",
+        "arkady"
+      ]
+    },
+    {
+      "id": "androids",
+      "name": "Security Androids",
+      "status": "ACTIVE",
+      "tag": "ENTITY",
+      "facts": {
+        "type": "Security Android",
+        "manufacturer": "CLOUDBANK Synthetics",
+        "tier": "Budget / Mass Produced",
+        "threat": "UNKNOWN"
+      },
+      "desc": "Outdated, budget-tier, mass-produced androids. They are unmistakably artificial and all look exactly alike. Their blank mannequin-like faces have no working eyes or mouths. They operate completely silently.",
+      "voice": "SILENT",
+      "manner": "Blank / mannequin-like.",
+      "tip": "There are always more of them.",
+      "links": [
+        "cloudbank-synthetics",
+        "eden",
+        "the-labyrinth"
+      ]
+    },
+    {
+      "id": "divers",
+      "name": "Divers",
+      "status": "COMMON",
+      "tag": "ENTITY",
+      "facts": {
+        "type": "Human",
+        "occupation": "Explorer",
+        "domain": "THE DEEP",
+        "motivation": "Fame / Fortune / Intelligence"
+      },
+      "desc": "Normal people who choose to enter THE DEEP. Exploratory, thrill-seeking and truth-searching.",
+      "manner": "Exploratory, thrill-seeking, truth-searching.",
+      "wants": "Fame, fortune, intelligence.",
+      "tip": "Divers do not tend to grow old.",
+      "links": [
+        "the-deep",
+        "arkady",
+        "ghost-eater"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "the-deep",
+      "name": "THE DEEP",
+      "status": "ACTIVE",
+      "tag": "LOCATION",
+      "facts": {
+        "type": "Facility / Megastructure",
+        "owner": "CLOUDBANK Synthetics",
+        "ruler": "Monarch",
+        "access": "DIVER ACCESS"
+      },
+      "desc": "A vast and dangerous environment beneath the surface of the known world. Its layout, history and true purpose remain under investigation.",
+      "links": [
+        "monarch",
+        "arkady",
+        "ghost-eater",
+        "divers",
+        "cloudbank-synthetics"
+      ]
+    },
+    {
+      "id": "the-labyrinth",
+      "name": "THE LABYRINTH",
+      "status": "RESTRICTED",
+      "tag": "LOCATION",
+      "facts": {
+        "type": "Unknown",
+        "navigation": "UNSTABLE",
+        "guide": "Noriko",
+        "danger": "HIGH"
+      },
+      "desc": "A region where getting lost is a persistent threat. Noriko claims to know how to navigate it after her encounter with the Minotaur.",
+      "links": [
+        "noriko",
+        "minotaur",
+        "androids"
+      ]
+    },
+    {
+      "id": "eden",
+      "name": "FLOOR 2: EDEN",
+      "status": "UNKNOWN",
+      "tag": "LOCATION",
+      "facts": {
+        "type": "Facility Floor",
+        "guide": "Noriko",
+        "history": "PARTIALLY RECOVERED",
+        "danger": "UNKNOWN"
+      },
+      "desc": "A named floor of THE DEEP. Noriko knows its history and speaks about ███████████ and the ███████████ Androids.",
+      "links": [
+        "noriko",
+        "androids",
+        "the-deep"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "verified-human-patch",
+      "name": "“VERIFIED HUMAN” Patch",
+      "status": "CONFIRMED",
+      "tag": "ARTIFACT",
+      "facts": {
+        "text": "CLOUDBANK SYNTHETIC PRODUCTION FACILITY VERIFIED HUMAN",
+        "owner": "Arkady",
+        "origin": "UNKNOWN",
+        "significance": "UNKNOWN"
+      },
+      "desc": "A worn patch carried by Arkady. Its wording suggests a connection between human identity and CLOUDBANK's synthetic production operations.",
+      "links": [
+        "arkady",
+        "cloudbank-synthetics"
+      ]
+    },
+    {
+      "id": "ghosts-in-the-machine",
+      "name": "Ghosts in the Machine Specimens",
+      "status": "WANTED",
+      "tag": "ARTIFACT",
+      "facts": {
+        "type": "Specimen",
+        "wantedBy": "Ghost Eater",
+        "origin": "UNKNOWN",
+        "value": "INFORMATION"
+      },
+      "desc": "Specimens sought by Ghost Eater. Their exact nature remains unknown.",
+      "links": [
+        "ghost-eater",
+        "the-deep"
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "id": "cloudbank-synthetics",
+      "name": "CLOUDBANK Synthetics",
+      "status": "ACTIVE",
+      "tag": "FACTION",
+      "facts": {
+        "type": "Synthetic Production Corporation",
+        "domain": "THE DEEP",
+        "operationalStatus": "UNKNOWN"
+      },
+      "desc": "The organization responsible for the facility and its synthetic production systems. Monarch is identified as its Industrial AI and “Ruler” of THE DEEP.",
+      "links": [
+        "monarch",
+        "androids",
+        "the-deep",
+        "verified-human-patch"
+      ]
+    }
+  ],
+  "creatures": [
+    {
+      "id": "minotaur",
+      "name": "The Minotaur",
+      "status": "UNCONFIRMED",
+      "tag": "CREATURE",
+      "facts": {
+        "type": "ENTITY",
+        "knownWitness": "Noriko",
+        "location": "THE LABYRINTH",
+        "information": "UNKNOWN"
+      },
+      "desc": "Noriko claims to have experienced an information encounter with the Minotaur. The nature of that encounter remains unclear.",
+      "links": [
+        "noriko",
+        "the-labyrinth",
+        "noriko-encounter"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "noriko-encounter",
+      "name": "Noriko's Information Encounter",
+      "status": "UNRESOLVED",
+      "tag": "EVENT",
+      "facts": {
+        "witness": "Noriko",
+        "entity": "The Minotaur",
+        "location": "THE LABYRINTH",
+        "result": "UNKNOWN"
+      },
+      "desc": "An encounter involving Noriko and the Minotaur. Since then, Noriko has repeatedly spoken about what she witnessed.",
+      "links": [
+        "noriko",
+        "minotaur",
+        "the-labyrinth"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "cloudbank-human-verification",
+      "name": "CLOUDBANK // HUMAN VERIFICATION",
+      "status": "FRAGMENTARY",
+      "tag": "DOCUMENT",
+      "facts": {
+        "source": "Arkady's Patch",
+        "integrity": "UNKNOWN",
+        "classification": "FIELD"
+      },
+      "desc": "A fragment represented physically by Arkady's “CLOUDBANK SYNTHETIC PRODUCTION FACILITY VERIFIED HUMAN” patch. The implications are unknown.",
+      "links": [
+        "arkady",
+        "cloudbank-synthetics",
+        "verified-human-patch"
+      ]
+    }
+  ]
+}
