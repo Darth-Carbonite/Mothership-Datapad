@@ -1,5 +1,5 @@
 let DATA={},META={},current="overview";
-const LABELS={personnel:"PERSONNEL",entities:"ENTITIES",locations:"LOCATIONS",artifacts:"ARTIFACTS",factions:"FACTIONS",creatures:"CREATURES",events:"EVENTS",documents:"DOCUMENTS"};
+const LABELS={contacts:"CONTACTS",entities:"ENTITIES",locations:"LOCATIONS",artifacts:"ARTIFACTS",corporations:"CORPORATIONS",events:"EVENTS",documents:"DOCUMENTS"};
 const content=document.querySelector("#content"),nav=document.querySelector("#nav"),search=document.querySelector("#search"),count=document.querySelector("#count"),breadcrumbs=document.querySelector("#breadcrumbs");
 const bootLines=["CLOUDBANK FIELD NODE DETECTED","AUTHENTICATING DIVER...","PLAYER ACCESS TOKEN ACCEPTED","ARCHIVE LINK ESTABLISHED","MONARCH OVERSIGHT: UNKNOWN","LOADING FIELD INTELLIGENCE..."];
 function runBoot(){const boot=document.querySelector("#boot"),target=document.querySelector("#bootLines");let i=0;function next(){if(i<bootLines.length){let line=document.createElement("div");line.textContent="> "+bootLines[i++];target.appendChild(line);setTimeout(next,180)}else setTimeout(()=>boot.classList.add("hidden"),350)}next()}
